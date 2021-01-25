@@ -4,14 +4,16 @@ using System.Text;
 
 namespace GenericsIntro
 {
-    class MyList<T>
+    class MyList<T> //Generic Class
     {
         T[] items;
+
         //constructor
         public MyList()
         {
             items = new T[0];
         }
+
         public void Add(T item)
         {
             T[] tempArray = items;
