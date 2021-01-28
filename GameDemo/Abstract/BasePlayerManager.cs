@@ -12,12 +12,12 @@ namespace GameDemo.Abstract
             Console.WriteLine("\n");
         }
 
-        public void Delete(Player player)
+        public virtual void Delete(Player player)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(Player player)
+        public virtual void Update(Player player)
         {
             throw new NotImplementedException();
         }

@@ -15,7 +15,7 @@ namespace GameDemo.Concrete
             _playerCheckService = playerCheckService;
         }
 
-        public void Add(Player player)
+        public override void Add(Player player)
         {
             if (_playerCheckService.CheckIfRealPerson(player))
             {
@@ -26,12 +26,12 @@ namespace GameDemo.Concrete
                 throw new Exception("Not a valid person.");
             }
         }
-        public void Update(Player player)
+        public override void Update(Player player)
         {
             Console.WriteLine("Oyuncu güncellendi: " + player.FirstName + " " + player.LastName);
         }
 
-        public void Delete(Player player)
+        public override void Delete(Player player)
         {
             Console.WriteLine("Oyuncu silindi: " + player.FirstName + " " + player.LastName);
         }

@@ -9,9 +9,14 @@ namespace GameDemo
     {
         static void Main(string[] args)
         {
-            PlayerManager playerManager = new PlayerManager(new MernisServiceAdapter());
-            Player player1 = new Player() {DateOfBirth = new DateTime(1985,1,6),
-                FirstName = "Engin", LastName = "Demiroğ", NationalityId = "28861499108"};
+            PlayerManager playerManager = new PlayerManager(new PlayerCheckManager());
+            Player player1 = new Player()
+            {
+                DateOfBirth = new DateTime(1985, 1, 6),
+                FirstName = "Engin",
+                LastName = "Demiroğ",
+                NationalityId = "***********"
+            };
             playerManager.Add(player1);
 
 
@@ -26,7 +31,7 @@ namespace GameDemo
             //CampaignManager campaignManager = new CampaignManager();
             //campaignManager.Add(campaign1);
 
-            
+
 
 
         }
