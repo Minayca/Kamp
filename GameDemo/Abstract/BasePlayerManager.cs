@@ -11,5 +11,15 @@ namespace GameDemo.Abstract
             Console.WriteLine("Saved to db: " + player.FirstName);
             Console.WriteLine("\n");
         }
+
+        public void Delete(Player player)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Update(Player player)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
