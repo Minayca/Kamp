@@ -9,13 +9,13 @@ namespace GameDemo
     {
         static void Main(string[] args)
         {
-            PlayerManager playerManager = new PlayerManager(new PlayerCheckManager());
+            PlayerManager playerManager = new PlayerManager(new MernisServiceAdapter());
             Player player1 = new Player()
             {
                 DateOfBirth = new DateTime(1985, 1, 6),
                 FirstName = "Engin",
                 LastName = "Demiroğ",
-                NationalityId = "***********"
+                NationalityId = "28861499108"
             };
             playerManager.Add(player1);
 
